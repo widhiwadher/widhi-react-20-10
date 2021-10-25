@@ -9,23 +9,22 @@ import Profile from './components/Profile';
 function App() {
   return (
     <>
-   
 
-    <Router>
-    
+      <Router>
+        <Navbar></Navbar>
 
 
-     <Switch>
-      <Route path="/" component={Home} exact></Route>
-      <Route path= "/about" component={About}></Route>
-      <Route path= "/navbar" component={Navbar}></Route>
-      <Route path= "/profile" component={Profile}></Route>
-   
-      </Switch>
-  
-    </Router>
+        <Switch>
+          <Route path="/" component={Home} exact></Route>
+          <Route path="/about" component={About}></Route>
+         
+          <Route path="/profile" component={Profile}></Route>
 
-   </>
+        </Switch>
+
+      </Router>
+
+    </>
   )
 }
 

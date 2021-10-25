@@ -1,11 +1,12 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 
 const About = () => {
     return (
         <>
       
-        <h1>About page</h1>
+        <input type="button" className="btn btn-primary" value="Click Me"></input>
         </>
     )
 }
