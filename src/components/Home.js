@@ -1,12 +1,14 @@
 import React from 'react';
 
-import logo from '../img/build.png'
+import logo from '../img/housing.jpg';
 
 const Home = () => {
   return (
-    <div className="container-fluid">
+    <div className="row-fluid">
 
-      <div className='row col-10 mx-auto'>
+      <div className='row col-12 mx-auto bg-img'>
+    
+
           <div className='col-md-5 col-lg-5 pt-5 pt-lg-0 order-2'>
          
             <h2 className = "pt-5 ">
@@ -18,7 +20,7 @@ const Home = () => {
           </div>
 
           <div className='col-md-5 col-lg-5 order-1 order-lg-2'>
-            <img src={logo} width="110%" height="110%" />
+            
           </div>
         
 

@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-         <div className = "container-fluid">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+         <div className = "row-fluid">
+        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand decorate"> <Link to = "/">BuildEasy</Link></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

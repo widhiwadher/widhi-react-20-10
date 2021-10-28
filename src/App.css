@@ -46,3 +46,7 @@ h1 {
   text-transform: capitalize;
   color: rosybrown;
 }
+
+.bg-img {
+  background-image: 'url(${logo})';
+}
