@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div className="row-fluid">
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand decorate"> <Link to="/">BuildEasy</Link></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@ const Navbar = () => {
                 nav-link"> <Link to="/profile">Profile</Link>
               </li>
               <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button className=' btn btn-primary  me-md-2'>Login</button>
+                <button className=' btn btn-primary  me-md-2' style = {{borderRadious :50 }}>Login</button>
                 <button className='btn btn-success'>SignUp</button>
               </div>
 

@@ -47,6 +47,14 @@ h1 {
   color: rosybrown;
 }
 
+.bg-white {
+  background: rgb(238, 236, 236);
+}
+
 .bg-img {
   background-image: 'url(${logo})';
+}
+.box{
+
+  background-color:rgba(114, 177, 228, 0.931) 
 }
