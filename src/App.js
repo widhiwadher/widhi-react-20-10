@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
 import Footer from "./components/Footer";
+import Searchbox from './components/Searchbox';
 import "./App.css";
 
 function App() {

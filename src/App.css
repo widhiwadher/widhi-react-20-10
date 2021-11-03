@@ -8,6 +8,10 @@
   }
 }
 
+body {
+  background-color: rgb(241, 241, 241);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -56,5 +60,7 @@ h1 {
 }
 .box{
 
-  background-color:rgba(114, 177, 228, 0.931) 
+  background-color:rgba(114, 177, 228, 0.931) ;
+  height: 300px;
+  
 }
