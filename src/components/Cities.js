@@ -1,70 +1,35 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button'
 
-const data = {
-  countries: [
-    { name: "Germany",
-      states: [ { name: "A", cities: ["Duesseldorf", "Leinfelden-Echterdingen", "Eschborn"]}]
-    },
-    { name: "Spain", states: [{ name: "B", cities: ["Barcelona"] }] },
+const Country = [{
+  name : "India ", 
+  State : [{ name : "Odisha" , cities :["Rourkela",'Bhubaneswar', 'Sambalpur','Cuttack','Jharsuguda',] }],
+  State : [{ name : "Karnataka" , cities :["Bangalore",'Mysuru', 'Mangalore','Madikeri','Bellure',] }]
+}]
 
-    { name: "USA", states: [{ name: "C", cities: ["Downers Grove"] }] },
-    { name: "Mexico", states: [{ name: ["D", "F", "H"], cities: ["Puebla"] }]},
-    {name: "India", states: [{ name: "E", cities: ["Delhi", "Kolkata", "Mumbai", "Bangalore"] }]}
-  ]
-};
+
 
 const Cities = () => {
-  const [selectedCountry, setSelectedCountry] = React.useState();
-  const [selectedState, setSelectedState] = React.useState();
-  const [selectedCity, setSelectedCity] = React.useState();
-  const availableState = data.countries.find((c) => c.name === selectedCountry);
-  const availableCities = availableState?.states?.find((s) => s.name === selectedState);
 
   return (
+    <div className = 'container'>
 
-    <div id="container">
+    <label className = "p-2" >Country</label>
+    <input type = 'text' placeholder = "--select country--" ></input>
 
-      <div> <label>Country</label>
-        <select placeholder="Country" value={selectedCountry} onChange ={(e) => setSelectedCountry(e.target.value)}>
-          <option>--Choose Country--</option>
-          {data.countries.map((value, key) => {
-            return (
-              <option value={value.name} key={key}>
-                {value.name}
-              </option>
-            );
-          })}
-        </select>
-      </div>
 
-      <div>
-        <label>State</label>
-        <select placeholder="State" value={selectedState} onChange={(e) => setSelectedState(e.target.value)}>
-          <option>--Choose State--</option>
-          {availableState?.states.map((e, key) => {
-            return (
-              <option value={e.name} key={key}>
-                {e.name}
-              </option>
-            );
-          })}
-        </select>
-      </div>
+    <label className = "p-2" >State</label>
+    <input type = 'text'   placeholder = "--select state--"></input>
 
-      <div>
-        <label>City</label>
-        <select placeholder="City" value={selectedCity} onChange={(e) => setSelectedCity(e.target.value)}>
-          <option>--Choose City--</option>
-          {availableCities?.cities.map((e, key) => {
-            return (
-              <option value={e.name} key={key}>
-                {e}
-              </option>
-            );
-          })}
-        </select>
-      </div>
+
+    <label className = "p-2" >City</label>
+    <input type = 'text' placeholder = "--select city--"></input>
+
+    <Button variant="outline-success ">Searchbox</Button>{' '}
+
+
     </div>
+   
   )
 }
 

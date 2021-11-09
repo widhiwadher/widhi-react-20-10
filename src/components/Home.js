@@ -20,12 +20,11 @@ const Home = () => {
           We are the team of experienced builders for building your customised dream space.
             </h5>
       </div> 
-    <div className="container">
-     
+    <div className="container">  
       <Searchbox/>
       </div>
 
-      <Cities/>
+   
   </div>
  )
 }
