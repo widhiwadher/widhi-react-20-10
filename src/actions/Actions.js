@@ -1,17 +1,17 @@
 import React from 'react'
 
-const incNum = () => {
+export const incNum = () => {
     return (
         {
             type : 'INCREMENT'
-
+           
         }
     )
 }
 
-export default decNum
 
-const incNum = () => {
+
+export const incNum = () => {
     return (
         {
             type : 'DECREMENT'
@@ -20,5 +20,5 @@ const incNum = () => {
     )
 }
 
-export default decNum
+
 

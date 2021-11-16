@@ -26,8 +26,9 @@ const Cities = () => {
     <input type = 'text' placeholder = "--select city--"></input>
 
     <Button variant="outline-success ">Searchbox</Button>{' '}
-
-
+     <button className = "btn btn-success"><span>+</span></button>
+     <input placeholder= "0" value= "0" ></input>
+     <button className = "btn btn-primary"><span>-</span></button>
     </div>
    
   )
