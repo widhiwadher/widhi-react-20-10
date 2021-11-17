@@ -1,23 +1,28 @@
 import React from 'react'
 
-export const incNum = () => {
-    return (
-        {
-            type : 'INCREMENT'
-           
+export const incNum = (amount) => {
+    return (dispatch) => {
+        dispatch({
+            type: 'deposit',
+            payload: amount 
         }
-    )
+            
+        )
+    }
+
+    
 }
 
 
 
-export const incNum = () => {
-    return (
-        {
-            type : 'DECREMENT'
-
-        }
-    )
+export const incNum = (amount) => {
+    return (dispatch) => {
+        dispatch ({
+          type : 'withdraw',
+          payload: amount
+       
+        })
+    }
 }
 
 
