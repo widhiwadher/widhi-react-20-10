@@ -9,6 +9,7 @@ import Profile from './components/Profile';
 import Footer from "./components/Footer";
 import Searchbox from './components/Searchbox';
 import Cities from "./components/Cities";
+import Reducer from './reducers/Reducer';
 import "./App.css";
 
 function App() {
