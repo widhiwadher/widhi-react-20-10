@@ -1,44 +1,39 @@
-import React from 'react'
-import Button from 'react-bootstrap/Button'
-
-const Country = [{
-  name: "India ",
-  State: [{ name: "Odisha", cities: ["Rourkela", 'Bhubaneswar', 'Sambalpur', 'Cuttack', 'Jharsuguda',] }],
-  State: [{ name: "Karnataka", cities: ["Bangalore", 'Mysuru', 'Mangalore', 'Madikeri', 'Bellure',] }]
-}]
-
-
+import { React, useState } from "react";
+import Button from "react-bootstrap/Button";
+import widhi from "../country.json";
+import { Typeahead } from "react-bootstrap-typeahead";
+import { Form } from "react-bootstrap";
 
 const Cities = () => {
+  const [singleSelections, setSingleSelections] = useState([]);
+  const [multiSelections, setMultiSelections] = useState([]);
 
   return (
-    <div className='container'>
-    <label className="p-2" >Country</label>
-      <select>
-        <option value="" selected disabled>--Select country--</option>
-        <option value="">India</option>
-      
-      </select>
+    <div className="container">
+      <Form.Group>
+        <Form.Label>Single Selection</Form.Label>
+        <Typeahead
+          id="basic-typeahead-single"
+          labelKey="name"
+          onChange={setSingleSelections}
+          options={widhi.states}
+          selected={singleSelections}
+        />
+      </Form.Group>
 
-
-      <label className="p-2" >State</label>
-      <select>
-        <option value="" selected disabled>--Select city--</option>
-        <option value="">A</option>
-        
-      </select>
-
-
-      <label className="p-2" >City</label>
-      <input type='text' placeholder="--select city--"></input>
-
-      <Button variant="outline-success p-2 ">Searchbox</Button>{' '}
-      <button className="btn btn-success"><span>+</span></button>
-      <input placeholder="0" value="0" ></input>
-      <button className="btn btn-primary"><span>-</span></button>
+      <Form.Group>
+        <Form.Label>Single Selection</Form.Label>
+        <Typeahead
+          id="basic-typeahead-multiple"
+          labelKey="name"
+          multiple
+          onChange={setMultiSelections}
+          options={widhi.city}
+          selected={multiSelections}
+        />
+      </Form.Group>
     </div>
+  );
+};
 
-  )
-}
-
-export default Cities
+export default Cities;

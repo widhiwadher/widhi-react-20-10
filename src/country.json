@@ -1,0 +1,89 @@
+{
+  "states": [
+    {
+      "name": "Bihar",
+      "code": "BR"
+    },
+    {
+      "name": "Jharkhand",
+      "code": "JH"
+    },
+    {
+      "name": "Karnataka",
+      "code": "KA"
+    }
+  ],
+  
+  "city": [
+    {
+      "name": "Raipur",
+      "stateCode": "BR",
+      "cityCode": "RA"
+    },
+    {
+      "name": "Patna",
+      "stateCode": "BR"
+    },
+    {
+      "name": "Bamra",
+      "stateCode": "KA"
+    },
+    {
+      "name": "Rou",
+      "stateCode": "JH"
+    },
+    {
+      "name": "Tata",
+      "stateCode": "JH"
+    },
+    {
+      "name": "Mysore",
+      "stateCode": "KA"
+    },
+    {
+      "name": "Bellary",
+      "stateCode": "KA"
+    },
+    {
+      "name": "Udupi",
+      "stateCode": "KA",
+      "cityCode": "RA"
+    }
+  ],
+  "locality": [
+    {
+      "name": "Kasturi Nagar",
+      "cityCode": "RA"
+    },
+    {
+      "name": "Indira Nagar",
+      "cityCode": "RA"
+    },
+    {
+      "name": "Kormanagla",
+      "cityCode": "RA"
+    },
+    {
+      "name": "BTM Layout",
+      "cityCode": "RA"
+    },
+    {
+      "name": "Tata",
+      "stateCode": "JH"
+    },
+    {
+      "name": "Mysore",
+      "stateCode": "KA"
+    },
+    {
+      "name": "Bellary",
+      "stateCode": "KA"
+    },
+    {
+      "name": "Udupi",
+      "stateCode": "KA",
+      "cityCode": "RA"
+    }
+  ],
+  "searchResult": []
+}
