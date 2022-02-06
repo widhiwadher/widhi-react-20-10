@@ -11,6 +11,8 @@ import Searchbox from './components/Searchbox';
 import Cities from "./components/Cities";
 import Reducer from './reducers/Reducer';
 import "./App.css";
+import Signup from './components/Signup';
+ 
 
 function App() {
   return (
@@ -25,6 +27,7 @@ function App() {
           <Route path="/about" component={About}></Route>
          
           <Route path="/profile" component={Profile}></Route>
+          <Route path="/signup" component={Signup}></Route>
 
         </Switch>
 

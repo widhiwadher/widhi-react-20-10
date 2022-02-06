@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="row-fluid">
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid ">
-          <a className="navbar-brand decorate"> <Link to="/"><strong>BuildEasy</strong></Link></a>
+          <a className="navbar-brand decorate"> <Link to="/"><strong>buildEasy</strong></Link></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -26,7 +26,7 @@ const Navbar = () => {
               </li>
               <div className="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button className=' btn btn-primary  me-md-2' style = {{borderRadious :50 }}>Login</button>
-                <button className='btn btn-success'>SignUp</button>
+                <button className='btn btn-success' ><Link to="/signup">SignUp</Link></button>
               </div>
 
             </ul>

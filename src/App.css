@@ -68,3 +68,59 @@ h1 {
 .shadow {
   margin-top: 100px;
 }
+
+/* -----------------Signup--------------------- */
+.btn-signup :hover{
+
+
+    border: 2px solid #72C4FB;
+    border-radius: unset;
+  }
+  .form-control {
+    background-color:#F4F4F4;
+    border: unset!important;
+    padding: 14px 18px;
+  }   
+  .form-control:hover {
+        border: 1px solid #2CA1FB!important;
+    }
+
+    .page-bg{
+      background: #061421;
+      border: 1px solid #3782B5;
+      
+      }
+  
+      .beam-text {
+          font-family: THICCCBOI;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 29.5564px;
+          text-align: center;
+          color: #FFFFFF;
+  }
+  .signup-container {
+      width: 434px;
+     height: 807px;
+     top:  145px;
+     bottom: 145px;
+     margin :0 auto;
+     background: #FCFCFC;
+     border: 1px solid #3782B5;
+     border-radius: 5px;
+     padding: 34px 37px;  
+       
+  }
+  
+  .signup-text {
+      text-align: center;
+  
+      color : black;
+  }
+  .form-label {
+  font-family:THICCCBOI;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  }
